@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project: { slug: string }) => ({ params: { slug: project.slug } }));
+}
+
+const { slug } = Astro.params;
+const projects = await getCollection('projects');
+const project = projects.find((p: any) => p.slug === slug);
+---
+
+<html lang="en">
+  <head>
+    <title>{project.data.title}</title>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-6">
+      <a href="/projects" class="text-blue-500 hover:underline"
+        >&larr; Back to Projects</a
+      >
+      <h1 class="text-4xl font-bold my-4">{project.data.title}</h1>
+      <p class="text-gray-700">{project.data.content}</p>
+    </div>
+  </body>
+</html>
