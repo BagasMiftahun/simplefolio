@@ -1,25 +1,32 @@
 ---
+import Footer from "../components/Footer.astro";
+import CallAction from "../components/CallAction.astro";
+import Header from "../components/Header.astro";
+
 const { title, description } = Astro.props;
 ---
-<html lang="id">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title || "Judul Default"}</title>
-    <meta name="description" content={description || "Deskripsi default untuk situs ini."} />
+    <title>{title || "Bagas Miftahun"}</title>
+    <meta name="description" content={description || "Personal website and portfolio of Bagas Miftahun, a full stack web developer based in Indonesia."} />
+
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" sizes="any">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href="/">Home</a>
-        <a href="/projects">Projects</a>
-      </nav>
+  <body class="bg-neutral-0 font-inter text-neutral-100">
+    <header class="py-6 lg:px-0 px-6 max-w-7xl mx-auto">
+      <Header />
     </header>
-    <main>
+    <main class="px-4 sm:px-6 lg:px-0 min-h-[50vh]">
       <slot />
     </main>
     <footer>
-      <p>&copy; 2025 My Website</p>
+      <!-- <CallAction /> -->
+      <Footer />
     </footer>
   </body>
 </html>
