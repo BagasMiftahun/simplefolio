@@ -2,6 +2,7 @@
 import Footer from "../components/ui/Footer.astro";
 import CallAction from "../components/ui/CallAction.astro";
 import Header from "../components/ui/Header.astro";
+import { ClientRouter } from "astro:transitions";
 
 const { title, description } = Astro.props;
 ---
@@ -15,13 +16,13 @@ const { title, description } = Astro.props;
     <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" sizes="any">
     <!-- Reset CSS -->
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css" />
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <ClientRouter />
   </head>
   <body class="bg-neutral-0 font-inter text-neutral-100">
     <header class="py-6 lg:px-0 px-6 max-w-7xl mx-auto">
       <Header />
     </header>
-    <main class="px-4 sm:px-6 lg:px-0 min-h-[50vh]">
+    <main class="px-4 sm:px-6 lg:px-0 min-h-[100vh]">
       <slot />
     </main>
     <footer>

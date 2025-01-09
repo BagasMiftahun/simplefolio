@@ -1,7 +1,11 @@
+---
+import { ArrowRight, List } from "@phosphor-icons/react";
+---
+
 <div class="flex items-center justify-between">
-  <a href="/">
+  <a href="/" aria-label="Home">
     <p class="text-3xl font-bold">
-        <img src="/logo.png" alt="" class="w-24">
+        <img src="/logo.png" alt="Bagas Miftahun" class="w-24">
     </p>
   </a>
   <div class="flex items-center gap-x-4">
@@ -11,7 +15,7 @@
       >
         <div class="flex items-center gap-x-3">
           <p class="font-semibold text-base">Let's Talk</p>
-          <i class="ph ph-arrow-right"></i>
+          <ArrowRight size={20} />
         </div>
       </button>
     </a>
@@ -19,7 +23,7 @@
     <button
       class="px-6 py-3 rounded-full border border-neutral-100 bg-neutral-0 text-neutral-100 hover:bg-neutral-100 hover:text-neutral-0"
     >
-        <i class="ph ph-list"></i>
+        <List size={24} />
     </button>
   </div>
 </div>

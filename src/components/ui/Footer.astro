@@ -1,3 +1,7 @@
+---
+import { TwitterLogo, YoutubeLogo, GithubLogo, InstagramLogo, ArrowUpRight } from "@phosphor-icons/react";
+---
+
 <div class="bg-neutral-100 text-white">
   <div class="py-14 lg:px-0 px-6 max-w-7xl mx-auto">
     <div class="grid md:grid-cols-2 grid-cols-1 items-center justify-center">
@@ -16,7 +20,7 @@
           class="w-full py-4 bg-neutral-100 text-lg outline-none border-none"
         />
         {/* Icon for email submission */}
-        <i class="ph ph-arrow-up-right"></i>
+        <ArrowUpRight size={28} />
       </div>
     </div>
     <div
@@ -40,10 +44,10 @@
       <div
         class="flex items-center gap-x-12 justify-center md:justify-end mt-4"
       >
-        <i class="ph-fill ph-threads-logo"></i>
-        <i class="ph-fill ph-linkedin-logo"></i>
-        <i class="ph-fill ph-github-logo"></i>
-        <i class="ph-fill ph-instagram-logo"></i>
+        <TwitterLogo size={28} weight="fill" />
+        <YoutubeLogo size={28} weight="fill" />
+        <GithubLogo size={28} weight="fill" />
+        <InstagramLogo size={28} weight="fill" />
       </div>
     </div>
     {/* Copyright Information */}
