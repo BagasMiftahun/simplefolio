@@ -1,7 +1,4 @@
 ---
-import Footer from "../components/ui/Footer.astro";
-import CallAction from "../components/ui/CallAction.astro";
-import Header from "../components/ui/Header.astro";
 import { ClientRouter } from "astro:transitions";
 
 const { title, description } = Astro.props;
@@ -18,16 +15,7 @@ const { title, description } = Astro.props;
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset@1.4.0/dist/reset.min.css" />
     <ClientRouter />
   </head>
-  <body class="bg-neutral-0 font-inter text-neutral-100">
-    <header class="py-6 lg:px-0 px-6 max-w-7xl mx-auto">
-      <Header />
-    </header>
-    <main class="px-4 sm:px-6 lg:px-0 min-h-[100vh]">
-      <slot />
-    </main>
-    <footer>
-      <!-- <CallAction /> -->
-      <Footer />
-    </footer>
+  <body class="bg-light font-inter text-dark">
+    <slot class="max-h-screen"/>
   </body>
 </html>

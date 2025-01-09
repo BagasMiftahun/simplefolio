@@ -1,4 +1,2 @@
-@import '@fontsource-variable/inter/index.css';
-@import '@fontsource-variable/epilogue/index.css';
-
-/* ...existing styles... */
+@import '@fontsource-variable/inter';
+@import '@fontsource/poppins';
