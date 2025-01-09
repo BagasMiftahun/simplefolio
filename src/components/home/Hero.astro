@@ -1,0 +1,48 @@
+---
+import { ArrowRight } from "@phosphor-icons/react";
+---
+
+<section class="py-14 lg:px-0 px-6 flex items-center justify-center max-w-7xl mx-auto">
+    <div class="flex flex-col gap-y-10 mt-4">
+      {/* Title of the hero section */}
+      <h1 class="text-[4rem] md:text-[6.5rem] custom-heading font-inter font-bold text-center">
+        <span class="text-neutral-40">I’m Bagas,</span> a passionate
+        developer specializing in digital solutions
+      </h1>
+      {/* Call-to-action button linking to the contact page */}
+      <div class="flex items-center justify-center">
+        <a href="/contact">
+          <button class="px-20 py-6 rounded-full border border-neutral-0 bg-neutral-100 my-4">
+            <div class="flex items-center gap-x-3">
+              <p class="custom-body font-semibold text-[22px] text-neutral-0">
+                Let’s Talk
+              </p>
+              {/* Icon of the arrow pointing to the right */}
+                <ArrowRight size={28} color="#ffffff"  />
+            </div>
+          </button>
+        </a>
+      </div>
+      {/* Social media links */}
+      <div class="flex items-center justify-center gap-x-10">
+        <a
+          href="/contact"
+          class="text-sm font-semibold uppercase border-b border-neutral-100 custom-body-2"
+        >
+          Instagram
+        </a>
+        <a
+          href="/contact"
+          class="text-sm font-semibold uppercase border-b border-neutral-100 custom-body-2"
+        >
+          Behance
+        </a>
+        <a
+          href="/contact"
+          class="text-sm font-semibold uppercase border-b border-neutral-100 custom-body-2"
+        >
+          Dribble
+        </a>
+      </div>
+    </div>
+  </section>
