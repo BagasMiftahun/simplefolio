@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const metadata = {
+  title: "Content | Bagas Miftahun",
+  description:
+    "Personal website and portfolio of Bagas Miftahun, a full stack web developer based in Indonesia.",
+};
+---
+
+<Layout title={metadata.title} description={metadata.description}>
+  <div class="flex flex-row h-screen">
+    <div class="flex flex-col p-10 w-full">
+      <!-- Kelompok Pertama -->
+      <section class="flex-grow">
+        <h3
+          class="font-poppins text-6xl font-normal max-w-[700px] leading-none text-start"
+        >
+          Table of-<br />Contents.
+        </h3>
+      </section>
+      <!-- Kelompok Kedua -->
+      <section>
+        <div class="flex flex-col gap-y-10">
+          <a
+            href="/"
+            class="font-normal text-[32px] inline-block underline underline-offset-8"
+          >
+            Brand Identity for XYZ Company
+          </a>
+          <a
+            href="/"
+            class="font-normal text-[32px] inline-block underline underline-offset-8"
+          >
+            Packaging Design for ABC Product
+          </a>
+          <a
+            href="/"
+            class="font-normal text-[32px] inline-block underline underline-offset-8"
+          >
+            Website Redesign for DEF Organization
+          </a>
+          <a
+            href="/"
+            class="font-normal text-[32px] inline-block underline underline-offset-8"
+          >
+            Social Media Branding for GHI Brand
+          </a>
+          <a
+            href="/"
+            class="font-normal text-[32px] inline-block underline underline-offset-8"
+          >
+            Brand Style Guide for JKL Company
+          </a>
+          <a
+            href="/"
+            class="font-normal text-[32px] inline-block underline underline-offset-8"
+          >
+            Advertising Campaign for MNO Product
+          </a>
+        </div>
+      </section>
+    </div>
+    <aside class="w-20 border-l flex flex-col items-center justify-between py-10">
+      <img src="/favicon.svg" alt="" class="h-10 w-10">
+      <div class="transform -rotate-90 whitespace-nowrap">
+        <a href="/" class="font-bold text-xl">
+          Portfolio <span class="font-normal text-xl">Bagas</span>
+        </a>
+      </div>
+      <div class="transform -rotate-90 whitespace-nowrap mb-10">
+        <a href="/contact" class="font-bold text-xl">Contact Me</a>
+      </div>
+    </aside>
+  </div>
+</Layout>

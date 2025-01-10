@@ -2,11 +2,71 @@
 import Layout from "../layouts/Layout.astro";
 
 const metadata = {
-  title: "About Me",
-  description: "Selamat datang di halaman tentang kami.",
+  title: "About Me | Bagas Miftahun",
+  description:
+    "Personal website and portfolio of Bagas Miftahun, a full stack web developer based in Indonesia.",
 };
 ---
+
 <Layout title={metadata.title} description={metadata.description}>
-  <h1>Welcome to the About Us Page</h1>
-  <p>Ini adalah halaman utama website Anda.</p>
+  <div class="flex flex-row h-screen">
+    <div class="flex flex-col p-10">
+      <!-- Kelompok Pertama -->
+      <section class="flex-grow">
+        <div class="flex items-start space-x-12">
+          <div class="flex-1">
+            <h3
+              class="font-poppins text-6xl font-normal max-w-[700px] leading-none"
+            >
+              About <br />Me
+            </h3>
+          </div>
+          <div class="flex-1 text-right gap-y-10">
+            <h1
+              class="font-poppins text-6xl font-bold max-w-full text-right mb-4"
+            >
+              Bagas Miftahun.
+            </h1>
+            <button
+              class="text-xl font-semibold border border-dark px-10 py-6 rounded-full hover:bg-dark hover:text-light cursor-none"
+            >
+              Web Developer
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Kelompok Kedua -->
+      <section class="grid grid-cols-2 gap-x-12 items-center">
+        <img src="/user.png" alt=""/>
+        <div class="space-y-6">
+          <a href="/content">
+            <button
+              class="text-xl font-semibold border border-dark px-10 py-6 rounded-full hover:bg-dark hover:text-light"
+            >
+              Welcome to My Portfolio
+            </button>
+          </a>
+          <p class="font-normal text-xl">
+            I am a passionate brand designer with a keen eye for creating impactful visual identities. With a deep understanding of the power of branding, I strive to craft compelling designs that not only capture attention but also communicate the essence and values of a brand.
+          </p>
+          <p class="font-normal text-xl">
+            My journey as a brand designer began several years ago when I discovered my love for blending art and strategy. I believe that successful branding is a harmonious fusion of creativity and purpose, and I am dedicated to delivering designs that resonate with both clients and their target audience.
+          </p>
+          <p class="font-normal text-xl">
+            Every project I undertake is approached with meticulous attention to detail and a commitment to excellence. I immerse myself in understanding the unique characteristics of each brand, its market, and its target audience. By conducting extensive research and analysis, I ensure that my designs are not only visually appealing but also strategically aligned to achieve the desired impact.
+          </p>
+          <p class="font-normal text-xl">
+            Thank you for visiting my portfolio. I invite you to explore my work and discover how my passion for brand design can elevate your business to new heights. If you are looking for a dedicated and creative partner to breathe life into your brand, I would love to connect and discuss how we can create something extraordinary together.
+          </p>
+        </div>
+      </section>
+    </div>
+    <aside class="w-20 border-l flex items-center justify-center">
+      <div class="transform -rotate-90 whitespace-nowrap">
+        <a href="/" class="font-bold text-xl"
+          >Portfolio <span class="font-normal text-xl">Bagas</span></a
+        >
+      </div>
+    </aside>
+  </div>
 </Layout>

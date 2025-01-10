@@ -8,16 +8,18 @@ const metadata = {
 ---
 
 <Layout title={metadata.title} description={metadata.description}>
-  <div class="flex flex-row">
+  <div class="flex flex-row h-screen">
     <div class="flex flex-col gap-y-24 p-10">
       <!-- Kelompok Pertama -->
       <section class="space-y-[100px] flex-grow">
         <h1 class="font-poppins text-[150px] font-bold max-w-[700px] leading-none">
           Bagas-Portfolio.
         </h1>
-        <button class="text-xl font-semibold border border-dark px-10 py-6 rounded-full hover:bg-dark hover:text-light">
-          by Design18th
-        </button>
+        <a href="/about-me">
+          <button class="text-xl font-semibold border border-dark px-10 py-6 rounded-full hover:bg-dark hover:text-light">
+            by Design18th
+          </button>
+        </a>
       </section>
       <!-- Kelompok Kedua -->
       <section class="flex items-center justify-between space-x-12">
@@ -40,7 +42,7 @@ const metadata = {
         </div>
       </section>
     </div>
-    <aside class="w-20 h-screen border-l flex items-center justify-center">
+    <aside class="w-20 border-l flex items-center justify-center">
       <div class="transform -rotate-90 whitespace-nowrap">
         <a href ="/" class="font-bold text-xl">Portfolio <span class="font-normal text-xl">Bagas</span></a>
       </div>
