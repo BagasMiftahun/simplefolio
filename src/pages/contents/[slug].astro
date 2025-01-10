@@ -22,7 +22,7 @@ const metadata = {
 ---
 
 <Layout title={metadata.title} description={metadata.description}>
-  <div class="flex flex-row h-screen">
+  <div class="flex flex-row max-h-screen">
     <div class="flex flex-row w-full">
       <!-- Kelompok Pertama -->
       <section class="flex-grow flex flex-col w-1/2">
@@ -31,15 +31,14 @@ const metadata = {
         >
           {project.data.title}
         </h3>
-        <div class="relative flex items-center justify-center my-18">
+        <div class="relative flex items-center justify-center">
           <hr class="border-t border-dark w-full" />
           <button class="absolute right-10 text-xl font-semibold border border-dark px-10 py-6 rounded-full hover:bg-dark hover:text-light cursor-pointer z-10 bg-white flex items-center">
             For More Details &nbsp;<ArrowUpRight size={24} />
           </button>
         </div>
-        <hr class="border-t border-dark my-18" />
-        <div class="flex flex-col gap-y-10 p-10">
-          <div class="flex flex-col gap-y-4">
+        <div class="flex flex-col gap-y-6 p-10">
+          <div class="flex flex-col gap-y-2">
             <p class="font-poppins text-2xl font-semibold">PROBLEM</p>
 
             <p class="font-normal text-xl">
@@ -47,16 +46,6 @@ const metadata = {
               difficult to stand out in a competitive market. Their existing
               logo and visual elements were generic and did not convey their
               unique value proposition.
-            </p>
-          </div>
-          <div class="flex flex-col gap-y-4">
-            <p class="font-poppins text-2xl font-semibold">NEEDS</p>
-
-            <p class="font-normal text-xl">
-              XYZ Company needed a memorable and visually appealing brand
-              identity that would resonate with its target audience,
-              differentiate them from competitors, and establish a strong brand
-              presence.
             </p>
           </div>
           <div class="flex flex-col gap-y-4">
