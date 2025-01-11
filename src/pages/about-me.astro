@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import myImage from '../../public/user.png';
 
 const metadata = {
   title: "About Me | Bagas Miftahun",
@@ -39,7 +41,12 @@ const metadata = {
       </section>
       <!-- Kelompok Kedua -->
       <section class="flex flex-col md:flex-row items-center max-h-screen overflow-auto gap-4">
-        <img src="/user.png" alt="User Image" class="mx-auto max-h-full"/>
+        <Image
+          src={myImage}
+          alt="User"
+          class="mx-auto max-h-full"
+          loading="eager"
+        />
         <div class="space-y-4 overflow-auto max-h-full">
           <p class="font-normal text-xl">
             I am a passionate brand designer with a keen eye for creating impactful visual identities. With a deep understanding of the power of branding, I strive to craft compelling designs that not only capture attention but also communicate the essence and values of a brand.
@@ -65,3 +72,6 @@ const metadata = {
     </aside>
   </div>
 </Layout>
+
+
+

@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import { ArrowUpRight } from "@phosphor-icons/react";
+import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   const projects = await getCollection("projects");
@@ -78,7 +79,15 @@ const metadata = {
       <section
         class="p-10 border-l border-dark w-1/2 flex items-center justify-center"
       >
-        <img src="/image.png" alt="" class="mx-auto" />
+      <Image 
+          src={project.data.image} 
+          alt={project.data.title} 
+          width={660}
+          height={880}
+          loading="eager"
+          class="mx-auto" 
+        />
+        <!-- <img src="/image.png" alt="" class="mx-auto" /> -->
       </section>
     </div>
     <aside

@@ -6,5 +6,6 @@ slug: "proyek-a"
 problem: "Deskripsi masalah yang dipecahkan oleh Proyek A."
 solution: "Deskripsi solusi yang ditawarkan oleh Proyek A."
 needs: "Deskripsi kebutuhan yang ditawarkan oleh Proyek A."
+image: "/image.png"
 ---
 
